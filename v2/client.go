@@ -33,7 +33,7 @@ func NewClient(endpoint string, opts ...ClientOption) *Client {
 // making requests.
 //
 //	NewClient(endpoint, WithHTTPClient(specificHTTPClient))
-func WithHTTPClient(httpclient *http.Client) ClientOption {
+func WithHTTPClient(httpclient HTTPRequestDoer) ClientOption {
 	return func(client *Client) {
 		client.httpClient = httpclient
 	}
