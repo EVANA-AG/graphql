@@ -1,4 +1,4 @@
-package graphql_next
+package v2
 
 import "github.com/pkg/errors"
 
